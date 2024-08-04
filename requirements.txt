@@ -3,4 +3,5 @@ python-dotenv==1.0.0
 mysql-connector-python==8.0.30
 bcrypt==3.2.2
 email-validator==1.2.1
+flask_cors
 gunicorn
