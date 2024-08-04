@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/perfil-u.css">
+    <title>Mi Perfil</title>
+</head>
+<body>
+    <!-- Perfil de usuario -->
+    <div class="profile-container">
+        <div class="register-form">
+            <h2>Registro</h2>
+            <form id="register-form" method="post">
+                <input type="text" id="nombre" placeholder="Nombre Completo" required>
+                <input type="email" id="correo" placeholder="Correo Institucional" required>
+                <input type="text" id="programa" placeholder="Programa" required>
+                <input type="password" id="contra1" placeholder="Contraseña" required>
+                <input type="password" id="contra2" placeholder="Confirmar Contraseña" required>
+                <button type="button" onclick=registrar()>Registrar</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="loadingModal" class="modal">
+        <div class="modal-content">
+            <p>Cargando...</p>
+        </div>
+    </div>
+</body>
+</html>

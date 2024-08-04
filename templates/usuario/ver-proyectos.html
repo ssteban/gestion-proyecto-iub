@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/ver-proyectos.css">
+    <title>Ver Proyectos</title>
+</head>
+<body>
+    
+
+    <div class="contenedor-proyectos">
+        <div class="busqueda-container">
+            <label for="nombre-proyecto">Nombre del Proyecto:</label>
+            <input type="text" id="nombre-proyecto" placeholder="Buscar por nombre...">
+            <button onclick="buscar()">Buscar</button>
+        </div>
+        
+        <div class="filtro">
+            <label for="facultad">Facultad:</label>
+                <select id="facultad" name="facultad" onchange=mostrarProgramas() required>
+                    <option value="null">seleccionar...</option>
+                    <option value="Facultad de Ciencias, Educación, Artes y Humanidades">Facultad de Ciencias, Educación, Artes y Humanidades</option>
+                    <option value="Facultad de Ciencias Económicas y Administrativas">Facultad de Ciencias Económicas y Administrativas</option>
+                    <option value="Facultad de Ingenierías">Facultad de Ingenierías</option>
+                </select>
+    
+            <label for="programa">Programa:</label>
+                <select id="programa" name="programa" required>
+                    <option value="null">seleccionar...</option>
+                </select>
+            
+                <label for="estado-proyecto">Estado del Proyecto:</label>
+                <select id="estado-proyecto" name="estado-proyecto">
+                    <option value="null">seleccionar...</option>
+                    <option value="en-curso">En Curso</option>
+                    <option value="completado">Completado</option>
+                    <option value="suspendido">Suspendido</option>
+                </select>
+
+            <button id="filtrar" type="button" onclick=filtrar()>Filtrar</button>
+        </div>
+
+        <h2>Proyectos</h2>
+        <hr>
+        <div id="lista-proyectos"></div>
+        <div id="paginacion"></div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content" id="modal-content"></div>
+    </div>
+
+</body>
+</html>

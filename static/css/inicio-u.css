@@ -1,0 +1,159 @@
+body {
+    background-image: url("../img/fondo.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0%;
+    padding: 0%;
+}
+
+header{
+    position: relative;
+    background-color: rgb(206, 205, 205);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    color: black;
+    padding: 0.75rem 1.5rem;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;  
+}  
+  
+nav ul li {
+    display: inline-block;
+    position: relative;  
+}  
+  
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+}   
+  
+.opcion:hover{
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 10px 0 0;
+} 
+  
+a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+}   
+
+/* a:hover{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    text-decoration: none;
+} */
+
+.perfil img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;  
+}
+  
+.opciones {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: rgb(206, 205, 205);
+    padding: 10px;
+    border: 1px solid rgb(206, 205, 205);
+    border-radius: 15px;
+}  
+  
+.perfil:hover .opciones {
+    display: block;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(10px);
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}  
+  
+.opciones div {
+    margin-bottom: 5px;  
+}  
+
+/*.contenedor{
+    width: 60%;
+    margin: auto;
+    margin-top: 1%;
+}
+
+.efecto{
+    /*background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);*/
+    /*background-color: white;
+    padding: 1%;
+    border-radius: 20px;
+}*/
+
+
+.filtro {
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.filtro label {
+    display: block;
+    margin: 5px 0;
+    font-weight: bold;
+    color: #333;
+    font-size: 14px; /* Fuente más pequeña */
+}
+
+.filtro select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px; /* Fuente más pequeña */
+}
+
+.filtro button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 8px;
+    font-size: 14px; /* Fuente más pequeña */
+    width: 100%;
+}
+
+.filtro button:hover {
+    background-color: #0056b3;
+}

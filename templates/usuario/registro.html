@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/registro.css">
+    <link rel="icon" href="../../static/img/icono.ico" type="image/x-icon">
+    <title>Registro</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="../../static/img/logo.png" alt="Logo IUB">
+    </div>
+    <div class="register-form">
+        <h2>Registro</h2>
+        <form id="register-form" method="post">
+            <input type="text" id="nombre" placeholder="Nombre Completo" required>
+            <input type="email" id="correo" placeholder="Correo Institucional" required>
+            <input type="text" id="programa" placeholder="Programa" required>
+            <input type="password" id="contra1" placeholder="Contraseña" required>
+            <input type="password" id="contra2" placeholder="Confirmar Contraseña" required>
+            <button type="submit">Registrase</button>
+        </form>
+        <p><a href="../../index.html">tengo una cuenta</a></p>
+    </div>
+
+
+    <div id="loadingModal" class="modal">
+        <div class="modal-content">
+            <p>Cargando...</p>
+        </div>
+    </div>
+
+    <script src="../../static/js/registro.js"></script>
+</body>
+</html>

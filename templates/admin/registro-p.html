@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/registro-p.css">
+    <title>Registro Proyecto</title>
+</head>
+<body>
+    <div class="registro-proyecto">
+        <h2>Registro de Proyectos</h2>
+        <form id="registro-proyecto">
+            <label for="titulo">Título del Proyecto:</label>
+            <input type="text" id="titulo" name="titulo" required>
+
+            <label for="resumen">Resumen del Proyecto:</label>
+            <textarea id="resumen" name="resumen" rows="5" required></textarea>
+
+            <label for="facultad">Facultad:</label>
+            <select id="facultad" name="facultad" onchange=mostrarProgramas() required>
+                <option value="null">seleccionar...</option>
+                <option value="Facultad de Ciencias, Educación, Artes y Humanidades">Facultad de Ciencias, Educación, Artes y Humanidades</option>
+                <option value="Facultad de Ciencias Económicas y Administrativas">Facultad de Ciencias Económicas y Administrativas</option>
+                <option value="Facultad de Ingenierías">Facultad de Ingenierías</option>
+            </select>
+
+            
+            <label for="programa">Programa:</label>
+            <select id="programa" name="programa" required>
+                <option value="null">seleccionar...</option>
+            </select>
+
+            <label for="tipo-proyecto">Tipo de Proyecto:</label>
+            <select id="tipo-proyecto" name="tipo-proyecto" required>
+                <option value="null">seleccionar...</option>
+                <option value="institucional">Institucional</option>
+                <option value="curricular">Curricular</option>
+            </select>
+
+            <label for="palabras-claves">Palabras Claves:</label>
+            <div class="palabras-claves-container">
+                <input type="text" id="palabras-claves" name="palabras-claves" required>
+                <button type="button" id="add-palabra-clave" onclick="addPalabraClave()">Añadir</button>
+            </div>
+            <div id="lista-palabras-claves"></div>
+
+
+            <label for="estado-proyecto">Estado del Proyecto:</label>
+            <select id="estado-proyecto" name="estado-proyecto" required>
+                <option value="null">seleccionar...</option>
+                <option value="en-curso">En Curso</option>
+                <option value="completado">Completado</option>
+                <option value="suspendido">Suspendido</option>
+            </select>
+
+            <label for="estudiantes">Nombre de los Estudiantes:</label>
+            <input type="text" id="estudiantes" name="estudiantes" required>
+
+            <label for="docente">Tutor:</label>
+            <input type="text" id="docente" name="docente" required>
+
+            <button type="button" id="submit-button" onclick=registrarProyecto()>Registrar Proyecto</button>
+        </form>  
+    </div> 
+</body>
+</html>
+
+

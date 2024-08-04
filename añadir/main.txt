@@ -1,0 +1,475 @@
+proyectos = [
+    ("Desarrollo de una Herramienta de Análisis de Datos para la Educación en Línea", 
+     "Creación de una herramienta para analizar datos educativos en línea y mejorar el rendimiento estudiantil.", 
+     "Facultad de Ciencias, Educación, Artes y Humanidades", "Licenciatura en Educación Básica Primaria", 
+     "institucional", "análisis de datos, educación en línea, rendimiento estudiantil, herramienta", 
+     "Pendiente", "Ana González, Luis Martínez", "Dra. Paula Ramírez", "admin"),
+
+    ("Estudio sobre la Implementación de Tecnologías de Realidad Aumentada en la Medicina", 
+     "Investigación sobre cómo la realidad aumentada puede ser utilizada en procedimientos médicos y educación.", 
+     "Facultad de Ciencias de la Salud", "programa no disponible", 
+     "investigación", "realidad aumentada, medicina, tecnologías, procedimientos médicos", 
+     "En progreso", "Javier Pérez, Laura Sánchez", "Dr. Ricardo López", "admin"),
+
+    ("Desarrollo de un Sistema de Predicción para el Mercado de Criptomonedas", 
+     "Creación de un sistema que utilice algoritmos de machine learning para predecir tendencias en el mercado de criptomonedas.", 
+     "Facultad de Ciencias Económicas y Administrativas", "Inteligencia de Negocios", 
+     "institucional", "predicción, criptomonedas, machine learning, tendencias", 
+     "Completado", "Sofía Ramírez, Carlos Gómez", "Dra. Ana Fernández", "admin"),
+
+    ("Investigación sobre la Aplicación de Blockchain en la Cadena de Suministro", 
+     "Estudio sobre cómo la tecnología blockchain puede mejorar la transparencia y eficiencia en la cadena de suministro.", 
+     "Facultad de Ciencias Económicas y Administrativas", "Administración de Negocios Internacionales", 
+     "investigación", "blockchain, cadena de suministro, transparencia, eficiencia", 
+     "En progreso", "Ricardo Torres, Marta López", "Dr. Javier Martínez", "admin"),
+
+    ("Desarrollo de una Plataforma de Gestión de Tareas para Equipos de Trabajo en Entornos Virtuales", 
+     "Creación de una plataforma que facilite la gestión y coordinación de tareas en equipos de trabajo virtuales.", 
+     "Facultad de Ingenierías", "Ingeniería Telemática", 
+     "institucional", "gestión de tareas, equipos virtuales, plataforma, coordinación", 
+     "Pendiente", "Laura Ramírez, Daniel Gómez", "Dr. Luis Sánchez", "admin"),
+
+    ("Estudio sobre la Eficiencia de los Sistemas de Energía Renovable en Áreas Rurales", 
+     "Investigación sobre cómo los sistemas de energía renovable pueden ser implementados de manera eficiente en áreas rurales.", 
+     "Facultad de Ciencias Ambientales", "programa no disponible", 
+     "investigación", "energía renovable, áreas rurales, eficiencia, implementación", 
+     "En progreso", "Gabriela Pérez, José Fernández", "Dra. Paula Rodríguez", "admin"),
+
+    ("Desarrollo de un Sistema de Gestión de Proyectos para el Sector de la Construcción", 
+     "Creación de un sistema para gestionar proyectos en la industria de la construcción, desde la planificación hasta la ejecución.", 
+     "Facultad de Ingenierías", "Ingeniería Industrial", 
+     "institucional", "gestión de proyectos, construcción, sistema, planificación", 
+     "Completado", "Carlos Gómez, Laura Sánchez", "Dr. Francisco Pérez", "admin"),
+
+    ("Investigación sobre la Integración de Tecnologías Wearables en el Monitoreo de la Salud", 
+     "Estudio sobre cómo las tecnologías wearables pueden ser utilizadas para monitorear la salud y bienestar de los usuarios.", 
+     "Facultad de Ciencias de la Salud", "programa no disponible", 
+     "investigación", "tecnologías wearables, monitoreo de salud, bienestar, integración", 
+     "En progreso", "Daniel Ramírez, Ana Gómez", "Dr. Javier López", "admin"),
+
+    ("Desarrollo de una Plataforma de Educación Interactiva para Niños", 
+     "Creación de una plataforma de aprendizaje interactivo destinada a mejorar la educación en la primera infancia.", 
+     "Facultad de Ciencias, Educación, Artes y Humanidades", "Licenciatura en Educación Básica Primaria", 
+     "institucional", "educación interactiva, niños, plataforma, aprendizaje", 
+     "Pendiente", "Sofía Martínez, Miguel Fernández", "Dra. Elena Sánchez", "admin"),
+
+    ("Estudio sobre la Influencia de la Inteligencia Artificial en la Personalización de Contenidos Web", 
+     "Investigación sobre cómo la inteligencia artificial puede personalizar el contenido web según las preferencias del usuario.", 
+     "Facultad de Ciencias Económicas y Administrativas", "Inteligencia de Negocios", 
+     "investigación", "inteligencia artificial, personalización, contenido web, preferencias", 
+     "En progreso", "Laura Pérez, Ricardo Gómez", "Dr. Andrés Sánchez", "admin"),
+
+    ("Desarrollo de un Sistema de Control de Calidad para Productos Farmacéuticos", 
+     "Creación de un sistema para asegurar la calidad de los productos farmacéuticos a lo largo del proceso de fabricación.", 
+     "Facultad de Ciencias de la Salud", "programa no disponible", 
+     "institucional", "control de calidad, productos farmacéuticos, sistema, fabricación", 
+     "Completado", "José Fernández, Gabriela López", "Dra. Ana Ramírez", "admin"),
+
+    ("Investigación sobre el Impacto de las Nuevas Tecnologías en el Sector Educativo", 
+     "Estudio sobre cómo las nuevas tecnologías están transformando la educación y los métodos de enseñanza.", 
+     "Facultad de Ciencias, Educación, Artes y Humanidades", "Licenciatura en Educación Básica Primaria", 
+     "investigación", "nuevas tecnologías, sector educativo, transformación, enseñanza", 
+     "En progreso", "Carlos Sánchez, Laura Fernández", "Dr. Luis Martínez", "admin"),
+
+    ("Desarrollo de una Plataforma de Telemedicina para Consulta de Especialistas", 
+     "Creación de una plataforma que facilite las consultas médicas con especialistas a través de telemedicina.", 
+     "Facultad de Ciencias de la Salud", "programa no disponible", 
+     "institucional", "telemedicina, consultas médicas, especialistas, plataforma", 
+     "Pendiente", "Gabriela Ramírez, Daniel Torres", "Dra. Paula Rodríguez", "admin"),
+
+    ("Estudio sobre el Efecto de la Automatización en la Productividad del Sector Manufacturero", 
+     "Investigación sobre cómo la automatización está impactando la productividad en el sector manufacturero.", 
+     "Facultad de Ingenierías", "Ingeniería Industrial", 
+     "investigación", "automatización, productividad, sector manufacturero, impacto", 
+     "En progreso", "Sofía López, Javier Pérez", "Dr. Ricardo Gómez", "admin"),
+
+    ("Desarrollo de un Sistema de Gestión para el Control de Recursos en Proyectos de Construcción", 
+     "Creación de un sistema para gestionar y controlar los recursos en proyectos de construcción.", 
+     "Facultad de Ingenierías", "Ingeniería Industrial", 
+     "institucional", "gestión de recursos, proyectos de construcción, sistema, control", 
+     "Completado", "Laura González, Daniel Ramírez", "Dr. Andrés Sánchez", "admin"),
+
+    ("Investigación sobre la Aplicación de Tecnologías de Comunicación en el Teletrabajo", 
+     "Estudio sobre cómo las tecnologías de comunicación están mejorando la eficacia del teletrabajo.", 
+     "Facultad de Ingenierías", "Ingeniería Telemática", 
+     "investigación", "tecnologías de comunicación, teletrabajo, eficacia, estudio", 
+     "En progreso", "Carlos Fernández, Ana López", "Dr. Luis Martínez", "admin"),
+
+    ("Desarrollo de una Plataforma para la Gestión de Eventos Virtuales", 
+     "Creación de una plataforma que facilite la organización y gestión de eventos en línea.", 
+     "Facultad de Ciencias Económicas y Administrativas", "Administración de Negocios Internacionales", 
+     "institucional", "gestión de eventos, virtuales, plataforma, organización", 
+     "Pendiente", "Gabriela Pérez, José Ramírez", "Dra. Paula Fernández", "admin"),
+
+    ("Estudio sobre la Implementación de Tecnologías de Información en la Gestión de la Salud Pública", 
+     "Investigación sobre cómo las tecnologías de información pueden ser utilizadas para mejorar la gestión de la salud pública.", 
+     "Facultad de Ciencias de la Salud", "programa no disponible", 
+     "investigación", "tecnologías de información, gestión de salud pública, implementación", 
+     "En progreso", "Javier Gómez, Laura Ramírez", "Dr. Ricardo López", "admin"),
+
+    ("Desarrollo de una Aplicación para la Evaluación del Rendimiento Deportivo", 
+     "Creación de una aplicación que permita a los atletas evaluar y mejorar su rendimiento deportivo.", 
+     "Facultad de Ciencias, Educación, Artes y Humanidades", "programa no disponible", 
+     "institucional", "evaluación, rendimiento deportivo, aplicación, mejora", 
+     "Completado", "Ana Fernández, Carlos López", "Dra. Elena Sánchez", "admin"),
+
+    ("Investigación sobre el Impacto de la Digitalización en el Sector de la Salud", 
+     "Estudio sobre cómo la digitalización está transformando el sector salud y la atención a los pacientes.", 
+     "Facultad de Ciencias de la Salud", "programa no disponible", 
+     "investigación", "digitalización, sector salud, transformación, atención a pacientes", 
+     "En progreso", "Laura Pérez, Ricardo Sánchez", "Dr. Javier Fernández", "admin"),
+
+    ("Desarrollo de una Plataforma de Gestión de Recursos Humanos para Empresas", 
+     "Creación de una plataforma que permita gestionar los recursos humanos en empresas de manera eficiente.", 
+     "Facultad de Ciencias Económicas y Administrativas", "Administración de Negocios Internacionales", 
+     "institucional", "gestión de recursos humanos, plataforma, eficiencia, empresas", 
+     "Pendiente", "Gabriela Ramírez, Daniel Gómez", "Dra. Ana Fernández", "admin"),
+
+    ("Estudio sobre la Eficiencia de los Sistemas de Energía Solar en Edificios Comerciales", 
+     "Investigación sobre cómo los sistemas de energía solar pueden ser implementados eficientemente en edificios comerciales.", 
+     "Facultad de Ciencias Ambientales", "programa no disponible", 
+     "investigación", "energía solar, edificios comerciales, eficiencia, implementación", 
+     "En progreso", "Ricardo Fernández, Laura Sánchez", "Dra. Paula Rodríguez", "admin"),
+
+    ("Desarrollo de un Sistema de Monitoreo para el Control de la Contaminación del Aire", 
+     "Creación de un sistema para monitorizar y controlar los niveles de contaminación del aire en áreas urbanas.", 
+     "Facultad de Ciencias Ambientales", "programa no disponible", 
+     "institucional", "monitoreo, contaminación del aire, sistema, control", 
+     "Completado", "José Ramírez, Ana González", "Dra. Marta Sánchez", "admin"),
+
+    ("Investigación sobre el Impacto de la Telemedicina en la Calidad de la Atención Médica", 
+     "Estudio sobre cómo la telemedicina está influyendo en la calidad de la atención médica y la satisfacción del paciente.", 
+     "Facultad de Ciencias de la Salud", "programa no disponible", 
+     "investigación", "telemedicina, calidad de atención, satisfacción del paciente, impacto", 
+     "En progreso", "Sandra López, Ricardo Martínez", "Dra. Paula Fernández", "admin"),
+
+    ("Desarrollo de una Aplicación para la Gestión de Proyectos Educativos", 
+     "Creación de una aplicación que facilite la gestión y seguimiento de proyectos educativos.", 
+     "Facultad de Ciencias, Educación, Artes y Humanidades", "Licenciatura en Educación Básica Primaria", 
+     "institucional", "gestión de proyectos, educativos, aplicación, seguimiento", 
+     "Pendiente", "Laura Ramírez, Daniel Torres", "Dra. Ana Rodríguez", "admin"),
+
+    ("Estudio sobre el Impacto de las Redes Sociales en el Comportamiento del Consumidor", 
+     "Investigación sobre cómo las redes sociales están influyendo en las decisiones de compra y comportamiento del consumidor.", 
+     "Facultad de Ciencias Económicas y Administrativas", "Inteligencia de Negocios", 
+     "investigación", "redes sociales, comportamiento del consumidor, decisiones de compra, impacto", 
+     "En progreso", "Marta Sánchez, Francisco Ramírez", "Dr. Andrés Fernández", "admin"),
+
+    ("Desarrollo de un Sistema de Información para la Gestión de la Producción en la Industria Textil", 
+     "Creación de un sistema para gestionar la producción en la industria textil, desde el diseño hasta la fabricación.", 
+     "Facultad de Ingenierías", "Ingeniería Industrial", 
+     "institucional", "gestión de producción, industria textil, sistema, fabricación", 
+     "Completado", "Ricardo Pérez, Ana Gómez", "Dr. Luis Martínez", "admin"),
+
+    ("Investigación sobre la Aplicación de Big Data en la Predicción de Tendencias del Mercado", 
+     "Estudio sobre cómo el Big Data puede ser utilizado para predecir tendencias en diferentes mercados.", 
+     "Facultad de Ciencias Económicas y Administrativas", "Inteligencia de Negocios", 
+     "investigación", "Big Data, predicción de tendencias, mercados, aplicación", 
+     "En progreso", "Laura González, Daniel Fernández", "Dr. Javier Sánchez", "admin"),
+
+    ("Desarrollo de una Plataforma para la Gestión de Recursos Naturales en Áreas Protegidas", 
+     "Creación de una plataforma para gestionar y proteger los recursos naturales en áreas protegidas.", 
+     "Facultad de Ciencias Ambientales", "programa no disponible", 
+     "institucional", "gestión de recursos naturales, áreas protegidas, plataforma, protección", 
+     "Pendiente", "Gabriela Pérez, Ricardo Sánchez", "Dra. Ana Ramírez", "admin"),
+
+    ("Estudio sobre el Impacto de las Tecnologías de Comunicación en la Productividad de los Equipos de Trabajo", 
+     "Investigación sobre cómo las tecnologías de comunicación están afectando la productividad de los equipos de trabajo.", 
+     "Facultad de Ingenierías", "Ingeniería Telemática", 
+     "investigación", "tecnologías de comunicación, productividad, equipos de trabajo, impacto", 
+     "En progreso", "Javier Pérez, Laura Fernández", "Dr. Luis Sánchez", "admin"),
+
+    ("Desarrollo de una Herramienta de Evaluación de la Sostenibilidad en Proyectos de Construcción", 
+     "Creación de una herramienta para evaluar la sostenibilidad en proyectos de construcción.", 
+     "Facultad de Ingenierías", "Ingeniería Industrial", 
+     "institucional", "evaluación de sostenibilidad, proyectos de construcción, herramienta, desarrollo", 
+     "Completado", "Carlos Gómez, Ana Ramírez", "Dr. Andrés Sánchez", "admin"),
+
+    ("Investigación sobre el Impacto del Teletrabajo en la Salud Mental de los Empleados", 
+     "Estudio sobre cómo el teletrabajo está afectando la salud mental y el bienestar de los empleados.", 
+     "Facultad de Ciencias de la Salud", "programa no disponible", 
+     "investigación", "teletrabajo, salud mental, bienestar, empleados", 
+     "En progreso", "Sandra López, Daniel Martínez", "Dr. Paula Fernández", "admin"),
+
+    ("Desarrollo de una Plataforma de Aprendizaje en Línea para la Capacitación Empresarial", 
+     "Creación de una plataforma de e-learning para capacitar a empleados en habilidades empresariales.", 
+     "Facultad de Ciencias Económicas y Administrativas", "Administración de Negocios Internacionales", 
+     "institucional", "aprendizaje en línea, capacitación empresarial, plataforma, e-learning", 
+     "Pendiente", "Laura Ramírez, Ricardo Gómez", "Dra. Elena Sánchez", "admin"),
+
+    ("Estudio sobre la Eficiencia de las Tecnologías de Energía Renovable en el Sector Residencial", 
+     "Investigación sobre cómo las tecnologías de energía renovable pueden ser aplicadas eficientemente en el sector residencial.", 
+     "Facultad de Ciencias Ambientales", "programa no disponible", 
+     "investigación", "energía renovable, sector residencial, eficiencia, tecnologías", 
+     "En progreso", "Gabriela Sánchez, José Fernández", "Dra. Ana Rodríguez", "admin"),
+
+    ("Desarrollo de un Sistema de Gestión de Inventarios para el Sector Agroindustrial", 
+     "Creación de un sistema para gestionar inventarios en el sector agroindustrial, desde la producción hasta la distribución.", 
+     "Facultad de Ciencias Económicas y Administrativas", "Administración de Negocios Internacionales", 
+     "institucional", "gestión de inventarios, agroindustria, sistema, distribución", 
+     "Completado", "Carlos López, Ana González", "Dra. Paula Fernández", "admin"),
+
+    ("Investigación sobre la Integración de Tecnologías de IoT en la Gestión de Edificios Inteligentes", 
+     "Estudio sobre cómo las tecnologías de Internet de las Cosas (IoT) pueden mejorar la gestión de edificios inteligentes.", 
+     "Facultad de Ingenierías", "Ingeniería Telemática", 
+     "investigación", "IoT, edificios inteligentes, gestión, tecnologías", 
+     "En progreso", "Ricardo Gómez, Laura Ramírez", "Dr. Luis Martínez", "admin"),
+
+    ("Desarrollo de una Herramienta de Evaluación de Riesgos en Proyectos de Inversión", 
+     "Creación de una herramienta para evaluar y gestionar los riesgos asociados a proyectos de inversión.", 
+     "Facultad de Ciencias Económicas y Administrativas", "Inteligencia de Negocios", 
+     "institucional", "evaluación de riesgos, proyectos de inversión, herramienta, gestión", 
+     "Pendiente", "Gabriela Fernández, Daniel Torres", "Dra. Ana Rodríguez", "admin"),
+
+    ("Estudio sobre el Impacto de la Inteligencia Artificial en la Atención al Cliente en Línea", 
+     "Investigación sobre cómo la inteligencia artificial está mejorando la atención al cliente en línea.", 
+     "Facultad de Ciencias Económicas y Administrativas", "Inteligencia de Negocios", 
+     "investigación", "inteligencia artificial, atención al cliente, en línea, impacto", 
+     "En progreso", "Laura Sánchez, Ricardo Martínez", "Dr. Javier Fernández", "admin"),
+
+    ("Desarrollo de un Sistema de Monitoreo para el Control de la Calidad del Agua en Áreas Urbanas", 
+     "Creación de un sistema para controlar y monitorear la calidad del agua en áreas urbanas.", 
+     "Facultad de Ciencias Ambientales", "programa no disponible", 
+     "institucional", "calidad del agua, monitoreo, control, áreas urbanas", 
+     "Completado", "Sandra López, José Ramírez", "Dra. Paula Rodríguez", "admin"),
+
+    ("Investigación sobre la Aplicación de Tecnologías de Realidad Virtual en la Capacitación Laboral", 
+     "Estudio sobre cómo la realidad virtual puede ser utilizada para la capacitación y formación en el entorno laboral.", 
+     "Facultad de Ciencias, Educación, Artes y Humanidades", "Licenciatura en Educación Básica Primaria", 
+     "investigación", "realidad virtual, capacitación laboral, tecnologías, formación", 
+     "En progreso", "Carlos Pérez, Laura Fernández", "Dr. Luis Martínez", "admin"),
+
+    ("Desarrollo de una Plataforma para la Gestión de la Seguridad en Proyectos de Construcción", 
+     "Creación de una plataforma para gestionar y garantizar la seguridad en proyectos de construcción.", 
+     "Facultad de Ingenierías", "Ingeniería Industrial", 
+     "institucional", "gestión de seguridad, proyectos de construcción, plataforma, garantías", 
+     "Pendiente", "Gabriela Ramírez, Daniel Gómez", "Dra. Ana Fernández", "admin"),
+
+    ("Estudio sobre el Impacto de las Energías Renovables en la Red Eléctrica Nacional", 
+     "Investigación sobre cómo la integración de energías renovables está afectando la red eléctrica nacional.", 
+     "Facultad de Ciencias Ambientales", "programa no disponible", 
+     "investigación", "energías renovables, red eléctrica, impacto, integración", 
+     "En progreso", "Laura Pérez, Ricardo Gómez", "Dr. Paula Rodríguez", "admin"),
+
+    ("Desarrollo de una Herramienta de Gestión de la Producción para la Industria Alimentaria", 
+     "Creación de una herramienta para gestionar la producción en la industria alimentaria, desde la materia prima hasta el producto final.", 
+     "Facultad de Ingenierías", "Ingeniería Industrial", 
+     "institucional", "gestión de producción, industria alimentaria, herramienta, materia prima", 
+     "Completado", "José Fernández, Ana López", "Dr. Andrés Sánchez", "admin"),
+
+    ("Investigación sobre la Aplicación de Tecnologías de Machine Learning en el Diagnóstico Médico", 
+     "Estudio sobre cómo el machine learning puede ser utilizado para mejorar el diagnóstico médico y la predicción de enfermedades.", 
+     "Facultad de Ciencias de la Salud", "programa no disponible", 
+     "investigación", "machine learning, diagnóstico médico, tecnologías, predicción de enfermedades", 
+     "En progreso", "Sandra Ramírez, Ricardo Martínez", "Dra. Ana Rodríguez", "admin"),
+
+    ("Desarrollo de una Plataforma de Colaboración en Línea para Equipos Internacionales", 
+     "Creación de una plataforma que facilite la colaboración y comunicación entre equipos de trabajo internacionales.", 
+     "Facultad de Ciencias Económicas y Administrativas", "Administración de Negocios Internacionales", 
+     "institucional", "colaboración en línea, equipos internacionales, plataforma, comunicación", 
+     "Pendiente", "Laura Sánchez, Daniel Gómez", "Dra. Paula Fernández", "admin"),
+
+    ("Estudio sobre la Eficiencia de las Tecnologías de Energía Eólica en el Sector Industrial", 
+     "Investigación sobre cómo las tecnologías de energía eólica pueden ser aplicadas eficientemente en el sector industrial.", 
+     "Facultad de Ciencias Ambientales", "programa no disponible", 
+     "investigación", "energía eólica, sector industrial, eficiencia, tecnologías", 
+     "En progreso", "Gabriela Fernández, José Ramírez", "Dra. Ana Rodríguez", "admin"),
+
+    ("Desarrollo de una Aplicación para el Seguimiento de Proyectos de Innovación Tecnológica", 
+     "Creación de una aplicación para gestionar y realizar un seguimiento de proyectos de innovación tecnológica.", 
+     "Facultad de Ingenierías", "Ingeniería Telemática", 
+     "institucional", "seguimiento de proyectos, innovación tecnológica, aplicación, gestión", 
+     "Completado", "Carlos Pérez, Ana Fernández", "Dr. Luis Martínez", "admin"),
+
+    ("Investigación sobre el Impacto de la Automatización en la Eficiencia de la Producción", 
+     "Estudio sobre cómo la automatización está mejorando la eficiencia en la producción en diversas industrias.", 
+     "Facultad de Ingenierías", "Ingeniería Industrial", 
+     "investigación", "automatización, eficiencia, producción, industrias", 
+     "En progreso", "Laura González, Ricardo Sánchez", "Dr. Andrés Sánchez", "admin"),
+
+    ("Desarrollo de un Sistema de Control para el Monitoreo de Recursos Energéticos en Edificios Comerciales", 
+     "Creación de un sistema para controlar y monitorizar el consumo de recursos energéticos en edificios comerciales.", 
+     "Facultad de Ciencias Ambientales", "programa no disponible", 
+     "institucional", "control de recursos energéticos, monitoreo, edificios comerciales, sistema", 
+     "Pendiente", "Gabriela Pérez, José Fernández", "Dra. Paula Rodríguez", "admin"),
+
+    ("Estudio sobre la Eficiencia de las Tecnologías de Almacenamiento de Energía en el Sector Residencial", 
+     "Investigación sobre cómo las tecnologías de almacenamiento de energía pueden ser aplicadas eficientemente en el sector residencial.", 
+     "Facultad de Ciencias Ambientales", "programa no disponible", 
+     "investigación", "tecnologías de almacenamiento, eficiencia, sector residencial, energía", 
+     "En progreso", "Sandra López, Ricardo Martínez", "Dra. Ana Rodríguez", "admin"),
+
+    ("Desarrollo de una Plataforma de Gestión de la Calidad para la Industria Farmacéutica", 
+     "Creación de una plataforma para asegurar y gestionar la calidad en la producción farmacéutica.", 
+     "Facultad de Ciencias de la Salud", "programa no disponible", 
+     "institucional", "gestión de calidad, industria farmacéutica, plataforma, producción", 
+     "Completado", "Laura Sánchez, Carlos Ramírez", "Dra. Ana Fernández", "admin"),
+
+    ("Investigación sobre la Aplicación de Tecnologías de Realidad Aumentada en el Turismo", 
+     "Estudio sobre cómo la realidad aumentada puede mejorar la experiencia del turista y la promoción de destinos.", 
+     "Facultad de Ciencias Económicas y Administrativas", "programa no disponible", 
+     "investigación", "realidad aumentada, turismo, experiencia, promoción de destinos", 
+     "En progreso", "Gabriela Fernández, Daniel Gómez", "Dr. Javier Sánchez", "admin"),
+
+    ("Desarrollo de un Sistema de Gestión de Proyectos para el Sector Energético", 
+     "Creación de un sistema para gestionar proyectos en el sector energético, desde la planificación hasta la ejecución.", 
+     "Facultad de Ingenierías", "Ingeniería Industrial", 
+     "institucional", "gestión de proyectos, sector energético, sistema, planificación", 
+     "Pendiente", "Carlos Pérez, Ana López", "Dr. Andrés Sánchez", "admin"),
+
+    ("Estudio sobre el Impacto de la Inteligencia Artificial en la Logística y Distribución", 
+     "Investigación sobre cómo la inteligencia artificial está optimizando los procesos de logística y distribución.", 
+     "Facultad de Ciencias Económicas y Administrativas", "Inteligencia de Negocios", 
+     "investigación", "inteligencia artificial, logística, distribución, optimización", 
+     "En progreso", "Laura Fernández, Ricardo Gómez", "Dr. Luis Martínez", "admin"),
+
+    ("Desarrollo de una Plataforma de Evaluación de Proyectos de Innovación en la Educación", 
+     "Creación de una plataforma para evaluar proyectos de innovación en el ámbito educativo.", 
+     "Facultad de Ciencias, Educación, Artes y Humanidades", "Licenciatura en Educación Básica Primaria", 
+     "institucional", "evaluación de proyectos, innovación, educación, plataforma", 
+     "Completado", "Ana Ramírez, Carlos Sánchez", "Dra. Paula Rodríguez", "admin"),
+
+    ("Investigación sobre la Aplicación de Tecnologías de Información en el Control de Epidemias", 
+     "Estudio sobre cómo las tecnologías de información pueden ayudar a controlar y gestionar epidemias.", 
+     "Facultad de Ciencias de la Salud", "programa no disponible", 
+     "investigación", "tecnologías de información, control de epidemias, gestión", 
+     "En progreso", "Gabriela Pérez, Ricardo Fernández", "Dra. Ana Rodríguez", "admin"),
+
+    ("Desarrollo de una Aplicación para la Optimización del Rendimiento en la Industria de la Construcción", 
+     "Creación de una aplicación para mejorar el rendimiento y la eficiencia en proyectos de construcción.", 
+     "Facultad de Ingenierías", "Ingeniería Industrial", 
+     "institucional", "optimización del rendimiento, industria de la construcción, aplicación, eficiencia", 
+     "Pendiente", "Laura González, Daniel Fernández", "Dr. Luis Martínez", "admin"),
+
+    ("Investigación sobre el Impacto de la Automatización en la Experiencia del Cliente", 
+     "Estudio sobre cómo la automatización está cambiando la experiencia del cliente en diferentes sectores.", 
+     "Facultad de Ciencias Económicas y Administrativas", "Inteligencia de Negocios", 
+     "investigación", "automatización, experiencia del cliente, sectores, impacto", 
+     "En progreso", "Sandra Fernández, Ricardo Gómez", "Dr. Javier Sánchez", "admin"),
+
+    ("Desarrollo de un Sistema de Gestión para la Industria de Alimentos y Bebidas", 
+     "Creación de un sistema para gestionar la producción y distribución en la industria de alimentos y bebidas.", 
+     "Facultad de Ciencias Económicas y Administrativas", "Administración de Negocios Internacionales", 
+     "institucional", "gestión de producción, industria de alimentos y bebidas, sistema, distribución", 
+     "Completado", "Carlos López, Laura Fernández", "Dra. Paula Rodríguez", "admin"),
+
+    ("Estudio sobre la Eficiencia de los Sistemas de Gestión de Residuos en Áreas Urbanas", 
+     "Investigación sobre cómo los sistemas de gestión de residuos están funcionando en las áreas urbanas.", 
+     "Facultad de Ciencias Ambientales", "programa no disponible", 
+     "investigación", "gestión de residuos, áreas urbanas, eficiencia, sistemas", 
+     "En progreso", "Gabriela Sánchez, Ricardo Pérez", "Dra. Ana Rodríguez", "admin"),
+
+    ("Desarrollo de una Herramienta para la Evaluación del Impacto Ambiental en Proyectos de Infraestructura", 
+     "Creación de una herramienta para evaluar el impacto ambiental de proyectos de infraestructura.", 
+     "Facultad de Ciencias Ambientales", "programa no disponible", 
+     "institucional", "evaluación de impacto ambiental, proyectos de infraestructura, herramienta", 
+     "Pendiente", "Laura Ramírez, Daniel Gómez", "Dra. Paula Rodríguez", "admin"),
+
+    ("Investigación sobre la Aplicación de Tecnologías de Blockchain en la Gestión de la Cadena de Suministro", 
+     "Estudio sobre cómo el blockchain puede mejorar la gestión de la cadena de suministro.", 
+     "Facultad de Ciencias Económicas y Administrativas", "Inteligencia de Negocios", 
+     "investigación", "blockchain, cadena de suministro, gestión, tecnología", 
+     "En progreso", "Sandra López, Ricardo Fernández", "Dr. Javier Sánchez", "admin"),
+
+    ("Desarrollo de una Aplicación para la Gestión de Proyectos de Investigación en Ciencias Sociales", 
+     "Creación de una aplicación para gestionar proyectos de investigación en el ámbito de las ciencias sociales.", 
+     "Facultad de Ciencias Sociales", "programa no disponible", 
+     "institucional", "gestión de proyectos, investigación, ciencias sociales, aplicación", 
+     "Pendiente", "Carlos Sánchez, Ana González", "Dra. Paula Fernández", "admin"),
+
+    ("Investigación sobre el Impacto de las Tecnologías de la Información en el Sector Financiero", 
+     "Estudio sobre cómo las tecnologías de la información están transformando el sector financiero.", 
+     "Facultad de Ciencias Económicas y Administrativas", "Inteligencia de Negocios", 
+     "investigación", "tecnologías de la información, sector financiero, transformación", 
+     "En progreso", "Laura Fernández, Ricardo Sánchez", "Dr. Javier Fernández", "admin"),
+
+    ("Desarrollo de una Herramienta de Gestión de la Innovación en el Sector Tecnológico", 
+     "Creación de una herramienta para gestionar y fomentar la innovación en el sector tecnológico.", 
+     "Facultad de Ingenierías", "Ingeniería Telemática", 
+     "institucional", "gestión de la innovación, sector tecnológico, herramienta", 
+     "Completado", "Gabriela Pérez, Daniel Gómez", "Dr. Luis Martínez", "admin"),
+
+    ("Investigación sobre la Aplicación de Tecnologías de Automatización en la Industria Textil", 
+     "Estudio sobre cómo las tecnologías de automatización pueden ser aplicadas en la industria textil para mejorar la producción.", 
+     "Facultad de Ingenierías", "Ingeniería Industrial", 
+     "investigación", "automatización, industria textil, producción, tecnologías", 
+     "En progreso", "Sandra López, Ricardo Fernández", "Dr. Andrés Sánchez", "admin"),
+
+    ("Desarrollo de una Plataforma para la Gestión de Proyectos de Innovación Social", 
+     "Creación de una plataforma para gestionar proyectos enfocados en la innovación social.", 
+     "Facultad de Ciencias Sociales", "programa no disponible", 
+     "institucional", "gestión de proyectos, innovación social, plataforma", 
+     "Pendiente", "Gabriela Ramírez, Daniel Fernández", "Dra. Ana Fernández", "admin"),
+
+    ("Investigación sobre la Aplicación de Tecnologías de Big Data en el Sector Retail", 
+     "Estudio sobre cómo el Big Data puede ser utilizado para mejorar la gestión y análisis en el sector retail.", 
+     "Facultad de Ciencias Económicas y Administrativas", "Inteligencia de Negocios", 
+     "investigación", "Big Data, sector retail, gestión, análisis", 
+     "En progreso", "Laura Ramírez, Ricardo Gómez", "Dr. Javier Sánchez", "admin"),
+
+    ("Desarrollo de una Herramienta para la Gestión de Proyectos de Innovación en la Salud", 
+     "Creación de una herramienta para gestionar proyectos enfocados en la innovación en el ámbito de la salud.", 
+     "Facultad de Ciencias de la Salud", "programa no disponible", 
+     "institucional", "gestión de proyectos, innovación, salud, herramienta", 
+     "Completado", "Sandra Pérez, Daniel Fernández", "Dra. Ana Fernández", "admin")
+]
+
+
+
+def crear_tabla():
+    try:
+        conn = sql.connect(**DB_CONFIG)
+        cursor = conn.cursor()
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS proyectos (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                titulo VARCHAR(150) NOT NULL UNIQUE,
+                resumen TEXT NOT NULL,
+                facultad VARCHAR(255) NOT NULL,
+                programa VARCHAR(255) NOT NULL,
+                tipo TEXT NOT NULL,
+                palabras_clave TEXT NOT NULL,
+                estado VARCHAR(35) NOT NULL,
+                estudiantes TEXT NOT NULL,
+                docente TEXT NOT NULL,
+                registrado VARCHAR(80) NOT NULL,
+                fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            )
+        """)
+        conn.commit()
+        conn.close()
+        print("Tabla creada correctamente.")
+    except sql.Error as e:
+        print("Error al crear la tabla:", e)
+
+        
+def insertar_proyectos(proyectos):
+    try:
+        conn = sql.connect(**DB_CONFIG)
+        cursor = conn.cursor()
+        
+        for proyecto in proyectos:
+            if len(proyecto) != 10:
+                print(f"Proyecto con número de parámetros incorrecto: {proyecto}")
+                continue
+            
+            try:
+                cursor.execute("""
+                    INSERT INTO proyectos (titulo, resumen, facultad, programa, tipo, palabras_clave, estado, estudiantes, docente, registrado)
+                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                """, proyecto)
+                conn.commit()
+            except sql.Error as e:
+                print(f"Error al insertar el proyecto {proyecto[0]}: {e}")
+                conn.rollback()  # Revertir cambios si hay un error
+        
+        conn.close()
+        print("Datos insertados correctamente.")
+    except sql.Error as e:
+        print("Error al conectar a la base de datos:", e)
+
+# Crear la tabla
+crear_tabla()
+
+# Insertar los proyectos
+insertar_proyectos(proyectos)

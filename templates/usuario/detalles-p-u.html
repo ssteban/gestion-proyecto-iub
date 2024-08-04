@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/ver-proyecto.css">
+    <title>Detalle del Proyecto</title>
+</head>
+<body>
+    <div class="contenedor-proyecto">
+        <h2 id="titulo-proyecto"></h2>
+        <p id="resumen-proyecto"></p>
+        <p id="facultad-proyecto"></p>
+        <p id="tipo-proyecto"></p>
+        <p id="palabras-clave-proyecto"></p>
+        <p id="estado-proyecto"></p>
+        <p id="estudiantes-proyecto"></p>
+        <p id="docente-proyecto"></p>
+    </div>
+    <script>
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const proyectoId = urlParams.get('id');
+            const ruta = 'http://127.0.0.1:5000';
+
+            if (proyectoId) {
+                fetch(ruta + '/proyecto/' + proyectoId, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        mostrarProyecto(data.proyecto);
+                    } else {
+                        alert('Error al obtener el proyecto: ' + data.message);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Hubo un problema al obtener el proyecto.');
+                });
+            } else {
+                alert('ID de proyecto no especificado.');
+            }
+
+
+        function mostrarProyecto(proyecto) {
+            document.getElementById('titulo-proyecto').innerText = proyecto.titulo;
+            document.getElementById('resumen-proyecto').innerText = proyecto.resumen;
+            document.getElementById('facultad-proyecto').innerText = "Facultad: " + proyecto.facultad;
+            document.getElementById('tipo-proyecto').innerText = "Tipo: " + proyecto.tipo;
+            document.getElementById('palabras-clave-proyecto').innerText = "Palabras clave: " + proyecto.palabras_clave;
+            document.getElementById('estado-proyecto').innerText = "Estado: " + proyecto.estado;
+            document.getElementById('estudiantes-proyecto').innerText = "Estudiantes: " + proyecto.estudiantes;
+            document.getElementById('docente-proyecto').innerText = "Docente: " + proyecto.docente;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/perfil-u.css">
+    <title>Mi Perfil</title>
+</head>
+<body>
+    <!-- Perfil de usuario -->
+    <div class="profile-container">
+        <div class="profile-picture">
+            <img src="../../static/img/user.png" alt="Foto de perfil" id="profileImg">
+            
+        </div>
+        <button id="changePhotoBtn" onclick=mostrarM()>Cambiar Foto de Perfil</button>
+        
+        <div class="personal-info">
+            <label for="nombre-completo">Nombre completo</label>
+            <input type="text" id="nombre-completo" value="" readonly>
+
+            <label for="correo">Dirección de correo electrónico</label>
+            <input type="email" id="correo" value="" readonly>
+
+            <label for="programa">Programa</label>
+            <input type="text" id="programa" value="" readonly>
+        </div>
+        <div class="account-details">
+            <label for="nombre-usuario">Nombre de usuario</label>
+            <input type="text" id="nombre-usuario" value="">
+
+            <p>Fecha de registro:</p>
+            <input type="text" id="fecha" value="" readonly>
+        </div>
+        <div class="security-settings buttons-container">
+            <button class="change-password-button" id="updatePasswordBtn">Cambiar contraseña</button>
+            <button class="save-button" onclick=actualizar()>Guardar Cambios</button>
+        </div>
+    </div>
+
+    <div id="loadingModal" class="modal">
+        <div class="modal-content">
+            <p>Cargando...</p>
+        </div>
+    </div>
+
+    <div id="updatePasswordModal" class="modal">
+        <div class="modal-content">
+            <h2>Actualizar Contraseña</h2>
+            <form id="updatePasswordForm">
+                <input type="password" id="oldPassword" placeholder="Antigua Contraseña" required>
+                <input type="password" id="newPassword" placeholder="Nueva Contraseña" required>
+                <input type="password" id="confirmNewPassword" placeholder="Confirmar Nueva Contraseña" required>
+                <button type="submit">Actualizar</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="changePhotoModal" class="modal">
+        <div class="modal-content">
+            <h2>Cambiar Foto de Perfil</h2>
+            <form id="changePhotoForm">
+                <input type="file" id="newProfilePhoto" accept="image/*" required>
+                <button type="button" onclick="subirfoto()">Subir</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

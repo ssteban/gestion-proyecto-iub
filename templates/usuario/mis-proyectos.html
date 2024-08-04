@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/ver-proyectos.css">
+    <title>Ver Proyectos</title>
+</head>
+<body>
+    <div class="contenedor-proyectos">
+        <h2>Mis Proyectos</h2>
+        <hr>
+        <div id="lista-proyectos"></div>
+        <div id="paginacion"></div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content" id="modal-content"></div>
+    </div>
+
+    <!-- Nuevo div para subir documentos -->
+    <div id="upload-document" style="display: none;">
+        <input type="file" id="file-input" accept=".doc,.docx,.pdf">
+        <button id="upload-button">Subir Documento</button>
+    </div>
+</body>
+</html>

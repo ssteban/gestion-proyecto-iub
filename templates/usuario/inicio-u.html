@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/inicio-u.css">
+    <link rel="icon" href="../../static/img/icono.ico" type="image/x-icon">
+    <title>Inicio</title>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" class="opcion" id="ver-proyectos"><img src="../../static/img/logo.png" width="45px" alt="Logo IUB"></a></li>
+                <li><a href="#" class="opcion" id="ver-proyectos2">Ver Proyectos</a></li>
+                <li><a href="#" class="opcion" id="registrar-proyectos">Registrar Proyectos</a></li>
+                <li><a href="#" class="opcion" id="mis-proyectos">Mis Proyectos</a></li>
+                <li><a href="#" class="opcion" id="tendencias">Tendencias</a></li>
+            </ul>
+            
+            <div class="perfil">
+                <img src="../../static/img/user.png" alt="Foto de perfil" id="img_user">
+                <div class="opciones">
+                    <p><a href="#" id="perfil">Perfil</a></p>
+                    <p><a href="#" id="cerrar-sesion">Cerrar sesión</a></p>
+                </div>
+            </div>   
+        </nav> 
+    </header> 
+
+    <div class="contenedor efecto" id="contenido">
+
+    </div>
+    
+    
+    <script src="../../static/js/inicio-u.js"></script>
+    <script>
+        if(checkLogin()){
+            document.addEventListener('DOMContentLoaded', (event) => {
+            });
+        }  
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+.registro-proyecto {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.palabras-claves-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#add-palabra-clave {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#lista-palabras-claves {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px; /* Añade espacio debajo de las palabras claves */
+}
+
+#lista-palabras-claves .palabra-clave {
+    background-color: #e0e0e0; /* Un color de fondo más claro */
+    padding: 5px 10px;
+    border-radius: 20px; /* Bordes redondeados */
+    font-size: 14px; /* Ajustar tamaño de la fuente */
+    color: #333; /* Color del texto */
+    border: 1px solid #ccc; /* Añadir un borde */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Añadir sombra */
+    display: flex;
+    align-items: center;
+}
+
+#lista-palabras-claves .palabra-clave::before {
+    content: '#'; /* Añadir un símbolo de hashtag antes de cada palabra clave */
+    margin-right: 5px;
+    color: #007bff;
+}
+
+#lista-palabras-claves .palabra-clave:hover {
+    background-color: #d0d0d0; /* Cambiar el color de fondo al pasar el cursor */
+    border-color: #007bff; /* Cambiar el color del borde al pasar el cursor */
+}

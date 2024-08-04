@@ -1,0 +1,7 @@
+Flask==2.2.2
+python-dotenv==1.0.0
+mysql-connector-python==8.0.30
+bcrypt==3.2.2
+email-validator==1.2.1
+smtplib==3.7.8
+gunicorn

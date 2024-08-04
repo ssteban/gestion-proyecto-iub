@@ -1,0 +1,23 @@
+validacion para inpedir ingreso ilegal
+
+codigo:
+<script>
+        async function checkAuthentication() {
+            try {
+                const response = await fetch('http://127.0.0.1:5000/is_authenticated', {
+                    credentials: 'include'  // Asegura que las cookies se envíen con la solicitud
+                });
+                const data = await response.json();
+                if (!data.authenticated) {
+                    window.location.href = '../../index.html';  // Redirige si no está autenticado
+                }
+            } catch (error) {
+                console.error('Error verificando autenticación:', error);
+            }
+        }
+    
+        window.onload = checkAuthentication;
+    </script>
+
+problema:
+el codigo no permite iniciar sesion ya que en glask donde se usa la session no se a actualizado
