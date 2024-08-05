@@ -9,23 +9,23 @@
     function mostrarProyectos(proyectos, pagina) {
         const listaProyectosDiv = document.getElementById("lista-proyectos");
         listaProyectosDiv.innerHTML = "";
-
+    
         const inicio = (pagina - 1) * proyectosPorPagina;
         const fin = inicio + proyectosPorPagina;
         const proyectosPagina = proyectos.slice(inicio, fin);
-
+    
         proyectosPagina.forEach(proyecto => {
             const proyectoDiv = document.createElement("div");
             proyectoDiv.className = "proyecto";
-
+    
             const titulo = document.createElement("h3");
             titulo.innerText = proyecto.titulo;
             proyectoDiv.appendChild(titulo);
-
+    
             const resumen = document.createElement("p");
             resumen.innerText = proyecto.resumen;
             proyectoDiv.appendChild(resumen);
-
+    
             const verButton = document.createElement("button");
             verButton.innerText = "Ver";
             verButton.className = "paginacion-btn";
@@ -33,13 +33,13 @@
                 mostrarDetallesProyecto(proyecto.id);
             };
             proyectoDiv.appendChild(verButton);
-
+    
             listaProyectosDiv.appendChild(proyectoDiv);
         });
-
+    
         const paginacionDiv = document.getElementById("paginacion");
         paginacionDiv.innerHTML = "";
-
+    
         if (pagina > 1) {
             const anteriorButton = document.createElement("button");
             anteriorButton.innerText = "Anterior";
@@ -49,7 +49,7 @@
             };
             paginacionDiv.appendChild(anteriorButton);
         }
-
+    
         if (fin < proyectos.length) {
             const siguienteButton = document.createElement("button");
             siguienteButton.innerText = "Siguiente";
@@ -59,8 +59,11 @@
             };
             paginacionDiv.appendChild(siguienteButton);
         }
+    
+        // Desplaza la ventana hacia arriba
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-
+    
     function obtenerProyectos(pagina = 1) {
         fetch(ruta + '/ver_proyectos', {
             method: 'POST',
