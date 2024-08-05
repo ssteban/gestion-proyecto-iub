@@ -85,14 +85,14 @@ a {
     border-radius: 15px;
 }  
   
-.perfil:hover .opciones {
+/* .perfil:hover .opciones {
     display: block;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(100px);
     -webkit-backdrop-filter: blur(10px);
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-}  
+}   */
   
 .opciones div {
     margin-bottom: 5px;  
@@ -157,3 +157,12 @@ a {
 .filtro button:hover {
     background-color: #0056b3;
 }
+
+.perfil .opciones.show {
+    display: block;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+} 

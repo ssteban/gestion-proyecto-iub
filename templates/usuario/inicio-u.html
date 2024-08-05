@@ -30,14 +30,24 @@
     </header> 
 
     <div class="contenedor efecto" id="contenido">
-
     </div>
-    
     
     <script src="../../static/js/inicio-u.js"></script>
     <script>
-        if(checkLogin()){
-            document.addEventListener('DOMContentLoaded', (event) => {
+        if (checkLogin()) {
+            document.addEventListener('DOMContentLoaded', function() {
+                const perfilImg = document.getElementById("img_user");
+                const opciones = document.querySelector(".opciones");
+
+                perfilImg.addEventListener("click", function() {
+                    opciones.classList.toggle("show");
+                });
+
+                document.addEventListener("click", function(event) {
+                    if (!perfilImg.contains(event.target) && !opciones.contains(event.target)) {
+                        opciones.classList.remove("show");
+                    }
+                });
             });
         }  
     </script>
