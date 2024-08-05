@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var loadingModal = document.getElementById('loadingModal');
     
 
-        var ruta='http://127.0.0.1:5000'
+        var ruta = 'https://gestion-proyecto-iub.onrender.com';
         if (pass1.length > 5 && pass1.length < 13) {
             console.log(pass1.length)
             if (pass1 === pass2) {

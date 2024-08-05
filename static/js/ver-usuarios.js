@@ -1,4 +1,4 @@
-var ruta = 'http://127.0.0.1:5000';
+var ruta = 'https://gestion-proyecto-iub.onrender.com';
 
 document.getElementById("buscar-boton").addEventListener("click", function() {
     const nombre = document.getElementById("buscar-nombre").value;

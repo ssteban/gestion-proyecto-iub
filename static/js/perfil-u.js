@@ -1,5 +1,5 @@
 (function () {
-    var ruta = 'http://127.0.0.1:5000';
+    var ruta = 'https://gestion-proyecto-iub.onrender.com';
 
     var loadingModal = document.getElementById('loadingModal');
     loadingModal.style.display = 'block';
@@ -117,7 +117,7 @@ function mostrarM() {
 }
 
 function actualizar() {
-    const ruta = 'http://127.0.0.1:5000';
+    var ruta = 'https://gestion-proyecto-iub.onrender.com';
     const usuario = document.getElementById('nombre-usuario').value;
     console.log(usuario)
     const correoUsuario = JSON.parse(localStorage.getItem('loggedInUser'));

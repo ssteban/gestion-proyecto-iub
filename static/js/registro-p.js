@@ -20,7 +20,7 @@ function registrarProyecto() {
         return;
     }
 
-    var ruta = 'http://127.0.0.1:5000';
+    var ruta = 'https://gestion-proyecto-iub.onrender.com';
     const correoUsuario = JSON.parse(localStorage.getItem('loggedInUser'));
     fetch(ruta + '/register-p', {
         method: 'POST',

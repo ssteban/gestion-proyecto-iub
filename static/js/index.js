@@ -7,7 +7,7 @@ function contra(pass) {
     } 
 }
 
-var ruta = 'http://127.0.0.1:5000';
+var ruta = 'https://gestion-proyecto-iub.onrender.com';
 
 document.getElementById('loginForm').addEventListener('submit', function (event) {
     event.preventDefault();
