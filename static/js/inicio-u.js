@@ -1,4 +1,15 @@
 document.addEventListener("DOMContentLoaded", function() {
+    // Código del menú hamburguesa
+    const menuIcon = document.querySelector('.menu-icon');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (menuIcon && navLinks) {
+        menuIcon.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+    }
+    
+    
     const contenidoDiv = document.getElementById("contenido");
 
     var ruta = 'https://gestion-proyecto-iub.onrender.com';
