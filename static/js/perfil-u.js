@@ -144,8 +144,10 @@ function actualizar() {
 
 
 function subirfoto() {
+    var ruta = 'https://gestion-proyecto-iub.onrender.com';
     var fileInput = document.getElementById('newProfilePhoto');
     var file = fileInput.files[0];
+
     if (file) {
         var reader = new FileReader();
         reader.onloadend = function () {
@@ -178,7 +180,7 @@ function subirfoto() {
                 ctx.drawImage(img, 0, 0, width, height);
 
                 var base64String = canvas.toDataURL('image/png').replace('data:image/png;base64,', '');
-                
+
                 // Mostrar la imagen redimensionada en el perfil inmediatamente
                 document.getElementById('profileImg').src = 'data:image/png;base64,' + base64String;
 
@@ -216,5 +218,6 @@ function subirfoto() {
         reader.readAsDataURL(file);
     }
 }
+
 
 

@@ -368,10 +368,11 @@ def detallesusuario(correo):
 
 #obtener proyectos registradospor un usuario especifico
 def obtener_proyectos_user(nombre):
+    #poner inner join para unir tablas de proyectos y usuario para ver los proyectos que tiene el usuario
     try:
         conn = sql.connect(**DB_CONFIG)
         cursor = conn.cursor(dictionary=True)
-        
+        #cursor.execute("SELECT * FROM usuarios INNER JOIN proyectos ON usuarios.nombre=preoyectos.nombre=%s",(nombre,))
         cursor.execute("SELECT * FROM proyectos WHERE registrado = %s", (nombre,))
         proyectos = cursor.fetchall()
         
